@@ -22,7 +22,7 @@ export async function action({ request }: ActionArgs) {
 
   if (!validateEmail(email)) {
     return json(
-      { errors: { email: "Email is invalid", password: null } },
+      { errors: { email: "Email is invalid login", password: null } },
       { status: 400 }
     );
   }
